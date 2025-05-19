@@ -1,11 +1,10 @@
 import config from "../config";
 
 import Home from "../pages/Home/Home"
-import DragDropSwap from "../components/common/DragDropSwap";
-
+import Portfolio from "../pages/Portfolio/Portfolio";
 const publicRoutes = [
     { path: config.routes.home, component: Home},
-    { path: config.routes.portfolio, component: DragDropSwap }
+    { path: config.routes.portfolio, component: Portfolio}
 ]
 
 export default publicRoutes

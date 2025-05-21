@@ -5,7 +5,8 @@ function Home() {
     return (
         <div>
             <h2>Homa page</h2>
-            <Link to={routes.portfolio}>Portfolio</Link>
+            <Link to={routes.portfolio}>Portfolio</Link> <br />
+            <Link to={routes.editPortfolio}>Drag</Link>
         </div>
     )
 }

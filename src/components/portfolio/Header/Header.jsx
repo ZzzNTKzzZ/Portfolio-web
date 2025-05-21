@@ -1,29 +1,19 @@
+import React from 'react';
+import styles from './Header.module.css';
 
 const Header = () => {
-  const user = {
-    name: "John Doe",
-    title: "Frontend Developer",
-    avatar: "/images/avatar.jpg", // Replace with your image path or URL
-    description: "Passionate about building user-friendly interfaces and modern web experiences.",
-    location: "San Francisco, CA",
-    email: "john@example.com",
-  }
-
   return (
-    <header className="portfolio-header">
-      <div className="avatar-section">
-        <img src={user.avatar} alt="Avatar" className="avatar" />
-      </div>
-      <div className="info-section">
-        <h1>{user.name}</h1>
-        <h2>{user.title}</h2>
-        <p>{user.description}</p>
-        <div className="contact">
-          <span>{user.location}</span> · <a href={`mailto:${user.email}`}>{user.email}</a>
-        </div>
-      </div>
+    <header className={styles.header}>
+      <div className={styles.logo}>YourName</div>
+      <nav>
+        <ul className={styles.navList}>
+          <li><a href="#about" className={styles.navLink}>About</a></li>
+          <li><a href="#projects" className={styles.navLink}>Projects</a></li>
+          <li><a href="#contact" className={styles.navLink}>Contact</a></li>
+        </ul>
+      </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

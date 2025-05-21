@@ -1,7 +1,10 @@
+// routes.js
 const routes = {
   home: "/",
   portfolio: "/portfolio",
-  editPortfolio: "/edit-portfolio/:id",
+  editPortfolio: "/editPortfolio",
+  editPortfolioId: "/editPortfolio/:id",
+  getPortfolioBox: (id) => `/editPortfolio/${id}`,
 };
 
-export default routes
+export default routes;

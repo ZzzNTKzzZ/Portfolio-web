@@ -1,9 +1,6 @@
-import Home from "./pages/Home/Home";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import publicRoutes from "./routes/routes";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import publicRoutes from "./routes/routes";
 function App() {
   return (
     <BrowserRouter>
